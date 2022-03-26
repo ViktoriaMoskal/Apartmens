@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жилой комплекс</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly"></script>
+    <script defer src="./scripts/index.js"></script>
+</head>
+
+<body>
+     <div class="first__screen"> 
+        <header class="header">
+            <div class="first__logo">
+                <img src="./img/first-screen__logo.svg" alt="">
+            </div>
+            <nav class="nav">
+                <div class="nav__sm" id="menu-burger"></div>
+                <ul class="menu menu-none" id="menu">
+                    <li><a href="#">О комплексе</a></li>
+                    <li><a href="#">Район</a></li>
+                    <li><a href="#">Каталог квартир</a></li>
+                    <li><a href="#">Ипотека</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="first__head">
+            <h1 class="first__title">Жилой комплекс <br>
+                в историческом центре</h1>
+            <img src="./img/mouse.png" alt="">
+        </div>
+        <div class="first__info">
+            <div>
+                <img class="first__img" src="./img/Group_1.png" alt="">
+                <span>Наб. реки Фонтанки 10-15</span>
+            </div>
+            <div>
+                <img class="first__img" src="./img/Group_2.png" alt="">
+                <span>8 (812) 123-45-67</span>
+            </div>
+        </div>
+    </div>
+    <section class="tastimonials wrapper">
+        <div class="container">
+            <div class="tastimonials__content">
+                <div>
+                    <div class="wrapper tastimonials__icon"><img src="./img/Group_1......png" alt=""></div>
+                    <p>Рядом исторические <br>
+                        парки и скверы</p>
+                </div>
+                <div>
+                    <div class="wrapper tastimonials__icon"><img src="./img/Group_2........png" alt=""></div>
+                    <p>Полностью <br>
+                        обустроенный</p>
+                </div>
+                <div>
+                    <div class="wrapper tastimonials__icon"><img src="./img/Group_3........png" alt=""></div>
+                    <p>10 фонтанов <br>
+                        на территории</p>
+                </div>
+                <div>
+                    <div class="wrapper tastimonials__icon"><img src="./img/Group_4........png" alt=""></div>
+                    <p>6 км <br>
+                        велодорожек</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="apartments wrapper">
+        <div class="container">
+            <h1 class="apartments__title">Наши квартиры</h1>
+            <div class="apartments__content">
+                <div class="apartments__item">
+                    <img class="apartmens__img" src="./img/main_1.png" alt="">
+                    <span class="apartments__info">Лофт — 3 этажа</span>
+                </div>
+                <div class="apartments__item">
+                    <img class="apartments__img" src="./img/main_2.png" alt="">
+                    <span class="apartments__info">Лофт — 2 этажа</span>
+                </div>
+                <div class="apartments__item">
+                    <img class="apartments__img" src="./img/main_3.png" alt="">
+                    <span class="apartments__info">Лофт — 3 этажа</span>
+                </div>
+                <div class="apartments__item">
+                    <img class="apartments__img" src="./img/main_4.png" alt="">
+                    <span class="apartments__info">Лофт — 2 этажа</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="cta wrapper">
+        <div class="container">
+            <h2 class="cta__title">Хотите посмотреть?</h2>
+            <div class="cta__body">
+                <p class="cta__info">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                    вэб-дизайне.
+                    Lorem Ipsum является
+                    стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
+
+                    печатник
+                    создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
+                    образцов.
+                </p>
+                <form class="cta__form" action="">
+                    <input class="cta__input" type="text" placeholder="Ваше имя">
+                    <input class="cta__input" type="tel" placeholder="Ваш телефон">
+                    <p class="cta__description">*Мы никому не передаем ваши данные.
+                        И не сохраняем ваш номер в базу.</p>
+                    <button class="cta__input cta__input_gold" type="submit">Посмотреть район</button>
+                </form>
+            </div>
+        </div>
+    </section> 
+    <section class="video wrapper">
+        <div class="container">
+            <div class="video__main">
+                <video id="video">
+                    <source src="./video/three.mp4" type="video/mp4">
+                </video>
+                <button class="video__control video__control_play" id="video-play"></button>
+                <button class="video__control video__control_pause" id="video-pause"></button>
+            </div>
+        </div>
+
+    </section>
+     <section class="maps wrapper">
+        <div class="container">
+            <h2 class="maps__title">Район на карте</h2>
+            <div class="maps__map" id="map"></div>
+        </div>
+    </section>
+    <section class="ask wrapper">
+        <div class="container">
+            <h2 class="ask__title">Есть вопросы?</h2>
+            <div class="ask__body">
+                <p class="ask__info">*Мы никому не передаем ваши данные. <br>
+                    И не сохраняем ваш номер в базу.</p>
+                <form class="ask__form" action="">
+                    <input class="ask__input" type="text" placeholder="Ваше имя">
+                    <input class="ask__input" type="tel" placeholder="Ваш телефон">
+                    <button class="ask__input ask__input_gold" type="submit">Посмотреть район</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="footer wrapper">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__img">
+                    <img src=".//img/first-screen__logo.svg" alt="">
+                </div>
+
+                <ul class="footer__list">
+                    <li> <a href="">О комплексе</a></li>
+                    <li><a href="">Район</a> </li>
+                    <li><a href="">Каталог квартир</a></li>
+                    <li><a href="">Каталог квартир</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+
+                <ul class="footer__list">
+                    <li><a href="">О комплексе</a></li>
+                    <li><a href="">Район</a> </li>
+                    <li><a href="">Каталог квартир</a></li>
+                    <li><a href="">Каталог квартир</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+
+                <ul class="footer__list">
+                    <li>Адрес: Наб. реки Фонтанки 10-15</li>
+                    <li> <a href="">Телефон: 8 (812) 123-45-67</a></li>
+                    <li><a href="">Отдел продаж: 10:00 - 20:00</a> </li>
+                    <li><a href="">E-mail: vip@housevip.ru</a></li>
+                    <li>
+                        <span><img src="./img/youtube.png" alt=""></span>
+                        <span><img src="./img/vk.png" alt=""></span>
+                        <span><img src="./img/facebook.png" alt=""></span>
+                        <span><img src="./img/instagram.png" alt=""></span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section> 
+</body>
+
+</html>
